@@ -9,11 +9,11 @@ public class Address implements Operand {
 	private int address;
 	
     /**
-     * Constructor
-     * @param index
+     * @param int
      */
-    public void Address(int index) {
-        address = index;
+    public void Address() {
+        // TODO implement here
+    	this.address = address;
     }
 
     /**
@@ -21,7 +21,7 @@ public class Address implements Operand {
      */
     public int getAddress() {
         // TODO implement here
-        return 0;
+        return address;
     }
 
     /**
@@ -29,6 +29,8 @@ public class Address implements Operand {
      * @return
      */
     public Word get(Memory memory) {
-        return memory.getWord(address);
+    	memory.read(this);
+        // TODO implement here
+        return null;
     }
 }
