@@ -24,7 +24,7 @@ public abstract class Memory {
 	}
 	
 	public void setWord(Word word, Address address){
-		
+		memory.add(address.getAddress(), word);
 	}
 
 }
