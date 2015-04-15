@@ -25,6 +25,7 @@ public class Print implements Instruction {
      */
     public void execute(Counter c, Memory m) {
         System.out.println(w.get(m).toString());
+        c.decreaseCounter();
     }
 
 }
