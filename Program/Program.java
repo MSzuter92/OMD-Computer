@@ -22,5 +22,13 @@ public abstract class Program extends java.util.ArrayList<Instruction> {
     public boolean add(Instruction ins) {
         return instructions.add(ins);
     }
+    
+    /**
+     * Returns an ArrayList containing all the programs instructions. 
+     * @return ArrayList instructions
+     */
+    public ArrayList<Instruction> fetchInstructions() {
+    	return instructions;
+    }
 
 }
