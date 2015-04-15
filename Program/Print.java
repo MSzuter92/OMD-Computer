@@ -24,7 +24,7 @@ public class Print implements Instruction {
      * @param Memory m
      */
     public void execute(Counter c, Memory m) {
-        System.out.println(w.toString());
+        System.out.println(w.get(m).toString());
     }
 
 }
