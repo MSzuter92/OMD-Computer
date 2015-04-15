@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * 
  */
-public class Counter {   //You can't count on GitHub...
+public class Counter {
 	int counter;
 	
     /**
