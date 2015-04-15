@@ -6,13 +6,14 @@ import java.util.*;
  * 
  */
 public class Address implements Operand {
-	int address;
+	private int address;
 	
     /**
-     * @param int
+     * Constructor
+     * @param index
      */
-    public Address(int index) {
-        // TODO implement here
+    public void Address(int index) {
+        address = index;
     }
 
     /**
@@ -28,7 +29,6 @@ public class Address implements Operand {
      * @return
      */
     public Word get(Memory memory) {
-        // TODO implement here
-        return null;
+        return memory.getWord(address);
     }
 }

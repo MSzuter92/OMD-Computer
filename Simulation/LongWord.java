@@ -10,18 +10,18 @@ public class LongWord extends Word {
 	long content;
 	
 	/**
-     * @param long
+	 * Constructor
+     * @param size
      */
     public LongWord(long size) {
-        // TODO implement here
+    	content = size;
     }
 
     /**
-     * @return
+     * @return content
      */
     private long getValue() {
-        // TODO implement here
-        return 0;
+        return content;
     }
 
     /**
@@ -30,7 +30,7 @@ public class LongWord extends Word {
      * @return
      */
     public LongWord add(Word w1, Word w2) {
-        // TODO implement here
+        
         return null;
     }
 

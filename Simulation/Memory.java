@@ -3,14 +3,15 @@ package Simulation;
 import java.util.ArrayList;
 
 public abstract class Memory {
-	ArrayList<Word> memory;
-	int size;
+	private ArrayList<Word> memory;
+	private int size;
 	
 	/**
-	 * 
+	 *
 	 */
 	public Memory(int size) {
-		
+		this.size = size;
+		memory = new ArrayList<Word>(size);
 	}
 	
 	/**
@@ -19,8 +20,7 @@ public abstract class Memory {
 	 * @return
 	 */
 	public Word read(Address address) {
-		
-		return null;
+		return memory.get(address.getAddress());
 	}
 
 }
