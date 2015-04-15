@@ -5,7 +5,7 @@ import java.util.*;
  * @param <E>
  * 
  */
-public abstract class Program extends java.util.ArrayList<Instruction> {
+public class Program extends java.util.ArrayList<Instruction> {
 	ArrayList<Instruction> instructions;
 
     /**

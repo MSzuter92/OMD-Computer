@@ -13,13 +13,6 @@ public class JumpEq implements Instruction {
 	int index;
 	Operand w1;
 	Operand w2;
-	
-	
-    /**
-     * 
-     */
-    public JumpEq() {
-    }
 
     /**
      * @param int index 
@@ -41,13 +34,11 @@ public class JumpEq implements Instruction {
     public void execute(Counter c, Memory m) {
         
     	if ( w1.get(m).equalsTo(w2.get(m))){
-    		//i så fall delegera till jump eller bara decrease counter -återkommer! 
-    		
+    		c.setCounter(c.getInitial()-index);
+        	c.decreaseCounter();
     	}
     	else {
-    		//Decrease Counter? 
-    	}
-    	
+    		c.decreaseCounter();
+    	}	
     }
-
 }

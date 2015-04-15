@@ -29,7 +29,14 @@ public class Computer {
 	 * @return
 	 */
 	public void load(Program program) {
-		instructions = (Instruction[]) program.fetchInstructions().toArray();
+		int count = 0;
+		ArrayList<Instruction> temp = program.fetchInstructions();
+		instructions = new Instruction[temp.size()];
+		for (Instruction i : temp) {
+			instructions[count] = i;
+			count++;
+		}
+		//instructions = (Instruction[]) program.fetchInstructions().toArray();
 		counter.setCounter(instructions.length);
 		counter.setInitial(instructions.length);
 		counterInitial = instructions.length;
