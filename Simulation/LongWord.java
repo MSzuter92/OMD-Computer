@@ -7,20 +7,21 @@ import java.util.*;
  * 
  */
 public class LongWord extends Word {
-	long content;
+	private long content;
 	
 	/**
-	 * Constructor
-     * @param size
+     * @param long
      */
-    public LongWord(long size) {
-    	content = size;
+    public LongWord(long content) {
+        // TODO implement here
+    	this.content = content;
     }
 
     /**
-     * @return content
+     * @return
      */
     private long getValue() {
+        // TODO implement here
         return content;
     }
 
@@ -29,17 +30,23 @@ public class LongWord extends Word {
      * @param Word w2 
      * @return
      */
-    public LongWord add(Word w1, Word w2) {
-        
-        return null;
+    @Override
+    public Word add(Word w) {
+        // TODO implement here
+        long value = this.content + ((LongWord)w).getValue();
+        return new LongWord(value);
     }
 
     /**
      * @param Word w1 
      * @return
      */
-    public boolean equalsTo(Word w1) {
+    @Override
+    public boolean equalsTo(Word w) {
         // TODO implement here
+    	if(this.content==((LongWord)w).getValue()){
+    		return true;
+    	}
         return false;
     }
 
@@ -47,9 +54,11 @@ public class LongWord extends Word {
      * @param Memory memory 
      * @return
      */
-    public LongWord get(Memory memory) {
+    @Override
+    public Word get(Memory memory) {
         // TODO implement here
-        return null;
+    	
+        return new LongWord(content);
     }
 
     /**
@@ -57,17 +66,20 @@ public class LongWord extends Word {
      * @param Word w2 
      * @return
      */
-    public LongWord mul(Word w1, Word w2) {
+    @Override
+    public Word mul(Word w) {
         // TODO implement here
-        return null;
+    	long value = this.content * ((LongWord)w).getValue();
+        return new LongWord(value);
     }
 
     /**
      * @return
      */
+    @Override
     public String toString() {
         // TODO implement here
-        return "";
+        return Long.toString(content);
     }
 
 }

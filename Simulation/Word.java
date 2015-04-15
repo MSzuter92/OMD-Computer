@@ -4,11 +4,11 @@ public abstract class Word implements Operand {
 	
     public abstract Word add(Word word);
  
-    public abstract boolean equalsTo(Word w1);
+    public abstract boolean equalsTo(Word word);
     
     public abstract Word get(Memory memory);
     
-    public abstract Word mul(Word w1, Word w2);
+    public abstract Word mul(Word word);
     
     @Override
     public abstract String toString();
