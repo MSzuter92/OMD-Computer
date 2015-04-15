@@ -3,8 +3,8 @@ package Simulation;
 
 import java.util.*;
 
-import org.w3c.dom.css.Counter;
-
+import Program.Counter;
+import Program.Instruction;
 import Program.Program;
 
 /**
@@ -14,18 +14,13 @@ public class Computer {
 	Counter counter;
 	Memory memory;
 	Program program;
-    
+	ArrayList<Instruction> instructions;
 	/**
      * 
      */
-    public Computer() {
-    }
-
-    /**
-     * @param Memory
-     */
-    public void Computer(Memory memory) {
-        // TODO implement here
+    public Computer(Memory memory) {
+    	this.memory=memory;
+    	instructions = new ArrayList<Instruction>();
     }
 
     /**
@@ -34,6 +29,7 @@ public class Computer {
      */
     public void load(Program program) {
         // TODO implement here
+    	instructions = program.fetchInstructions();
     }
 
     /**
@@ -41,6 +37,11 @@ public class Computer {
      */
     public void run() {
         // TODO implement here
+    	for(Instruction i:instructions){
+    		i.execute(counter, memory);
+    		
+    	}
+    	
     }
 
 }

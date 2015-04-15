@@ -11,7 +11,7 @@ public class Address implements Operand {
     /**
      * @param int
      */
-    public void Address() {
+    public Address() {
         // TODO implement here
     	this.address = address;
     }
@@ -29,8 +29,7 @@ public class Address implements Operand {
      * @return
      */
     public Word get(Memory memory) {
-    	memory.read(this);
         // TODO implement here
-        return null;
+        return memory.read(this);
     }
 }
