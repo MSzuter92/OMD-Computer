@@ -17,7 +17,7 @@ public class Copy implements Instruction {
      * @param Operand src 
      * @param Address dest
      */
-    public void Copy(Operand src, Address dest) {
+    public Copy(Operand src, Address dest) {
         this.src = src;
         this.dest = dest;
     }

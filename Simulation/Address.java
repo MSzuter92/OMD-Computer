@@ -11,8 +11,7 @@ public class Address implements Operand {
     /**
      * @param int
      */
-    public Address() {
-        // TODO implement here
+    public Address(int address) {
     	this.address = address;
     }
 

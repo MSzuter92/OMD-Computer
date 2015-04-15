@@ -21,6 +21,7 @@ public class Computer {
     public Computer(Memory memory) {
     	this.memory=memory;
     	instructions = new ArrayList<Instruction>();
+    	counter = new Counter();
     }
 
     /**
@@ -30,18 +31,18 @@ public class Computer {
     public void load(Program program) {
         // TODO implement here
     	instructions = program.fetchInstructions();
+    	counter.setCounter(instructions.size());
     }
 
     /**
      * @return
      */
     public void run() {
-        // TODO implement here
-    	for(Instruction i:instructions){
-    		i.execute(counter, memory);
-    		
+    	while (counter.getValue() > 0) {
+    		for(Instruction i : instructions){
+    			i.execute(counter, memory);
+    		}
     	}
-    	
     }
 
 }
