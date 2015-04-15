@@ -20,8 +20,8 @@ public class Jump implements Instruction {
     /**
      * @param int index
      */
-    public void Jump(int index) {
-        // TODO implement here
+    public Jump(int index) {
+        this.index = index;
     }
 
     /**
@@ -29,7 +29,8 @@ public class Jump implements Instruction {
      * @param Memory m
      */
     public void execute(Counter c, Memory m) {
-        // TODO implement here
+        c.setCounter(c.getValue()-index);
+        
     }
 
 }

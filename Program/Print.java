@@ -9,7 +9,7 @@ import Simulation.Operand;
 /**
  * 
  */
-public class Print {
+public class Print implements Instruction {
 	Operand w;
 	
     /**
