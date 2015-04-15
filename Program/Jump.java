@@ -10,12 +10,6 @@ import Simulation.Memory;
  */
 public class Jump implements Instruction {
 	int index;
-	
-    /**
-     * 
-     */
-    public Jump() {
-    }
 
     /**
      * @param int index
@@ -29,8 +23,8 @@ public class Jump implements Instruction {
      * @param Memory m
      */
     public void execute(Counter c, Memory m) {
-        c.setCounter(c.getValue()-index);
-        
+    	c.setCounter(c.getInitial()-index);
+    	c.decreaseCounter();
     }
 
 }
