@@ -14,6 +14,7 @@ public class JumpEq implements Instruction {
 	Operand w1;
 	Operand w2;
 	
+	
     /**
      * 
      */
@@ -26,7 +27,11 @@ public class JumpEq implements Instruction {
      * @param Operand w2
      */
     public void JumpEq(int index, Operand w1, Operand w2) {
-        // TODO implement here
+        
+    	this.w1 = w1;
+    	this.w2= w2;
+    	this. index = index;
+    	
     }
 
     /**
@@ -34,7 +39,15 @@ public class JumpEq implements Instruction {
      * @param Memory m
      */
     public void execute(Counter c, Memory m) {
-        // TODO implement here
+        
+    	if ( w1.get(m).equalsTo(w2.get(m))){
+    		//i så fall delegera till jump eller bara decrease counter - återkommer! 
+    		
+    	}
+    	else {
+    		//Decrease Counter? 
+    	}
+    	
     }
 
 }
