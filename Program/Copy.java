@@ -27,8 +27,7 @@ public class Copy implements Instruction {
      * @param Memory m
      */
     public void execute(Counter c, Memory m) {
-        Word w1 = src.get(m);
-        dest.setWord(w1);
+        m.setWord(src.get(m), dest);
         c.decreaseCounter();
 
     }

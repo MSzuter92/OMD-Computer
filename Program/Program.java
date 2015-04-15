@@ -24,6 +24,22 @@ public abstract class Program extends java.util.ArrayList<Instruction> {
     }
     
     /**
+     * remove is not permitted, returns null
+     */
+    public Instruction remove(int index) {
+    	System.out.println("Remove on a program list is not permitted!! ACCESS DENIED!!");
+    	return null;
+    }
+    
+    /**
+     * remove is not permitted, returns null
+     */
+    public Instruction remove(Instruction ins) {
+    	System.out.println("Remove on a program list is not permitted!! ACCESS DENIED!!");
+    	return null;
+    }
+    
+    /**
      * Returns an ArrayList containing all the programs instructions. 
      * @return ArrayList instructions
      */

@@ -6,8 +6,6 @@ import java.util.*;
 import Simulation.Memory;
 import Simulation.Operand;
 
-//hello
-
 /**
  * 
  */
