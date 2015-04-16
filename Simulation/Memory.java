@@ -23,6 +23,7 @@ public abstract class Memory {
 	}
 	
 	public void setWord(Word word, Address address){
+		memory.remove(address.getAddress());
 		memory.add(address.getAddress(), word);
 	}
 

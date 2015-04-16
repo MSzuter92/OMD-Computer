@@ -32,7 +32,6 @@ public class Computer {
 		counter = new Counter();
 		ArrayList<Instruction> temp = program.fetchInstructions();
 
-		
 		instructions = new Instruction[temp.size()];
 		int count = 0;
 		for (Instruction i : temp) {

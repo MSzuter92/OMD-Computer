@@ -58,7 +58,7 @@ public class LongWord extends Word {
      * @return
      */
     public Word mul(Word w) {
-    	long value = this.content * ((LongWord)w).getValue();
+    	long value = content * ((LongWord)w).getValue();
         return new LongWord(value);
     }
 
