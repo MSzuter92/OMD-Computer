@@ -24,7 +24,6 @@ public class Jump implements Instruction {
      */
     public void execute(Counter c, Memory m) {
     	c.setCounter(c.getInitial()-index);
-    	c.decreaseCounter();
     }
 
 }

@@ -19,8 +19,8 @@ public class Counter {
     /**
      * 
      */
-    public void setCounter(int size) {
-        counter = size;
+    public void setCounter(int value) {
+        counter = value;
     }
     
     public void setInitial(int value) {

@@ -19,7 +19,6 @@ public class Address implements Operand {
      * @return
      */
     public int getAddress() {
-        // TODO implement here
         return address;
     }
 
@@ -28,7 +27,6 @@ public class Address implements Operand {
      * @return
      */
     public Word get(Memory memory) {
-        // TODO implement here
         return memory.read(this);
     }
 }

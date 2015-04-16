@@ -11,7 +11,6 @@ public abstract class Memory {
 	 */
 	public Memory(int size) {
 		memory = new ArrayList<Word>(size);
-		
 	}
 	
 	/**

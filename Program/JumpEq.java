@@ -32,12 +32,9 @@ public class JumpEq implements Instruction {
      * @param Memory m
      */
     public void execute(Counter c, Memory m) {
-        
-    	if ( w1.get(m).equalsTo(w2.get(m))){
+    	if (w1.get(m).equalsTo(w2.get(m))){
     		c.setCounter(c.getInitial()-index);
-        	c.decreaseCounter();
-    	}
-    	else {
+    	} else {
     		c.decreaseCounter();
     	}	
     }
