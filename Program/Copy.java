@@ -32,5 +32,9 @@ public class Copy implements Instruction {
         c.decreaseCounter();
 
     }
+    
+    public String toString() {
+		return "CPY" + " " + src.toString() + " [" + dest.toString() + "] ";
+}
 
 }

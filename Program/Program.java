@@ -46,5 +46,23 @@ public class Program extends java.util.ArrayList<Instruction> {
     public ArrayList<Instruction> fetchInstructions() {
     	return instructions;
     }
+    
+    public String toString(){
+    	StringBuilder sb = new StringBuilder();
+    	for(int i = 0; i < instructions.size() ;i++){
+    		sb.append(i + " " + instructions.get(i).toString() + "\n");
+    	}
+    	return sb.toString();
+    }
 
 }
+
+
+
+
+
+
+
+
+
+

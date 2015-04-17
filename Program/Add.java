@@ -26,4 +26,7 @@ public class Add extends Arithmetic {
         c.decreaseCounter();
     }
 
+    public String toString() {
+		return "ADD" + " [" + w1.toString() + "] " + w2.toString() + " [" + dest.toString() + "]";
+    }
 }

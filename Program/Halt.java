@@ -23,4 +23,7 @@ public class Halt implements Instruction {
         c.setCounter(-1);
     }
     
+    public String toString() {
+    		return "HLT";
+    }
 }

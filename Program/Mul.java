@@ -28,5 +28,8 @@ public class Mul extends Arithmetic {
         m.setWord(result, dest);
         c.decreaseCounter();
     }
-
+    
+    public String toString() {
+		return "MUL" + " [" + w1 + "] " + "[" + w2 + "] " + "[" + dest + "] ";
+}
 }

@@ -29,4 +29,8 @@ public class Address implements Operand {
     public Word get(Memory memory) {
         return memory.read(this);
     }
+    
+    public String toString(){
+    	return Integer.toString(address);
+    }
 }

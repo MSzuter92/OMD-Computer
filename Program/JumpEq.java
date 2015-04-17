@@ -38,4 +38,12 @@ public class JumpEq implements Instruction {
     		c.decreaseCounter();
     	}	
     }
+    
+    public String toString(){
+    	return "JEQ " + String.valueOf(index) + " [" + w1.toString() + "] " + w2.toString();
+    }
 }
+
+
+
+

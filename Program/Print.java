@@ -28,4 +28,7 @@ public class Print implements Instruction {
         c.decreaseCounter();
     }
 
+    public String toString(){
+    	return "PRT" + " [" + w + "] ";
+    }
 }

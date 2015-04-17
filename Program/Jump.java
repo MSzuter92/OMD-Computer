@@ -26,4 +26,7 @@ public class Jump implements Instruction {
     	c.setCounter(c.getInitial()-index);
     }
 
+    public String toString() {
+		return "JMP " + index;
+}
 }

@@ -9,4 +9,6 @@ public interface Operand {
 	 */
 	public Word get(Memory memory);
 	
+	public String toString();
+	
 }
