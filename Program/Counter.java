@@ -1,48 +1,54 @@
 package Program;
-import java.util.*;
 
-/**
- * 
- */
 public class Counter {
 	int counter;
 	int initialValue;
-	
-    /**
-     * 
-     */
-    public Counter() {
-    	counter = 0;
-    	initialValue = 0;
-    }
 
-    /**
-     * 
-     */
-    public void setCounter(int value) {
-        counter = value;
-    }
-    
-    public void setInitial(int value) {
-    	initialValue = value;
-    }
-    
-    public int getInitial() {
-    	return initialValue;
-    }
+	/**
+	 * Initiates a Counter with the default values 0
+	 */
+	public Counter() {
+		counter = 0;
+		initialValue = 0; //To keep track of the original amount of instructions, primarily for Jumps.
+	}
 
-    /**
-     * 
-     */
-    public void decreaseCounter() {
-        counter--;
-    }
+	/**
+	 * Sets the Counter to the desired value.
+	 * @param value The new value of the Counter
+	 */
+	public void setCounter(int value) {
+		counter = value;
+	}
 
-    /**
-     * 
-     */
-    public int getValue() {
-        return counter;
-    }
+	/**
+	 * Sets the InitialValue of the Counter.
+	 * @param value The new Value of the initialValue
+	 */
+	public void setInitial(int value) {
+		initialValue = value;
+	}
+
+	/**
+	 * Returns this Counters initial value.
+	 * @return initialValue The original value of this counter
+	 */
+	public int getInitial() {
+		return initialValue;
+	}
+
+	/**
+	 * Decreases the counter with 1.
+	 */
+	public void decreaseCounter() {
+		counter--;
+	}
+
+	/**
+	 * Returns the current value of the counter.
+	 * @return counter The current value
+	 */
+	public int getValue() {
+		return counter;
+	}
 
 }

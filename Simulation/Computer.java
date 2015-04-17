@@ -1,55 +1,50 @@
 package Simulation;
 
-
 import java.util.*;
 
 import Program.Counter;
 import Program.Instruction;
 import Program.Program;
 
-/**
- * 
- */
 public class Computer {
 	Counter counter;
-	int counterInitial;
 	Memory memory;
 	Program program;
 	Instruction[] instructions;
-	
+
 	/**
-	 * 
+	 * Initiates a new Computer. 
+	 * @param Memory memory The type of memory to be used 
 	 */
 	public Computer(Memory memory) {
 		this.memory=memory;
 	}
 
 	/**
-	 * @param Program 
-	 * @return
+	 * Loads the specified program into the memory.
+	 * @param Program The program to be loaded
 	 */
 	public void load(Program program) {
-		counter = new Counter();
-		ArrayList<Instruction> temp = program.fetchInstructions();
+		counter = new Counter(); //Creates new Counter
 
+		ArrayList<Instruction> temp = program.fetchInstructions();
 		instructions = new Instruction[temp.size()];
 		int count = 0;
-		for (Instruction i : temp) {
-			instructions[count] = i;
+		for (Instruction i : temp) {  //Transfers the instructions into an Array so they can be executed with 
+			instructions[count] = i;  //the correct index and make Jumps possible
 			count++;
 		}
-		
+
 		counter.setCounter(instructions.length);
 		counter.setInitial(instructions.length);
-		counterInitial = instructions.length;
 	}
 
 	/**
-	 * @return
+	 * Iterates over the instructions list and executes them in order.
 	 */
 	public void run() {
 		while (counter.getValue() > 0) {
-			instructions[counterInitial-counter.getValue()].execute(counter, memory);
+			instructions[counter.getInitial()-counter.getValue()].execute(counter, memory);
 		}
 	}
 }
