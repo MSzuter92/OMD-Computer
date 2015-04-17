@@ -40,25 +40,5 @@ public class Program extends java.util.ArrayList<Instruction> {
 		}
 		return sb.toString();
 	}
-
-	/**
-	 * Overrides remove in ArrayList to do nothing since removing a instruction in a Program in not permitted.
-	 * @param int index The index of the object to be removed
-	 * @return null if a remove is executed
-	 */
-	public Instruction remove(int index) {
-		System.out.println("Remove on a program list is not permitted!! ACCESS DENIED!!");
-		return null;
-	}
-
-	/**
-	 * Overrides remove in ArrayList to do nothing since removing a instruction in a Program in not permitted.
-	 * @param Instruction ins The Object to be removed
-	 * @return null if a remove is executed
-	 */
-	public Instruction remove(Instruction ins) {
-		System.out.println("Remove on a program list is not permitted!! ACCESS DENIED!!");
-		return null;
-	}
-
+	
 }

@@ -1,8 +1,8 @@
 package Program;
 
 public class Counter {
-	int counter;
-	int initialValue;
+	private int counter;
+	private int initialValue;
 
 	/**
 	 * Initiates a Counter with the default values 0
