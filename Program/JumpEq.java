@@ -4,9 +4,9 @@ import Simulation.Memory;
 import Simulation.Operand;
 
 public class JumpEq implements Instruction {
-	int index;
-	Operand w1;
-	Operand w2;
+	private int index;
+	private Operand w1;
+	private Operand w2;
 
 	/**
 	 * Initiates a JumpEq instruction which compares two Words and executes a Jump upon equality of the Words.

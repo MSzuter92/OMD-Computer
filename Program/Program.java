@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Program extends java.util.ArrayList<Instruction> {
 	private static final long serialVersionUID = 1L;
-	ArrayList<Instruction> instructions;
+	private ArrayList<Instruction> instructions;
 
 	/**
 	 * Constructs a new ArrayList where the programs instructions will be stored.

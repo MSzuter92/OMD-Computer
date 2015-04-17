@@ -5,8 +5,8 @@ import Simulation.Memory;
 import Simulation.Operand;
 
 public class Copy implements Instruction {
-	Operand src;
-	Address dest;
+	private Operand src;
+	private Address dest;
 
 	/**
 	 * Initiates a Copy instruction which moves the value of a Word into another.

@@ -5,9 +5,9 @@ import Simulation.Memory;
 import Simulation.Operand;
 
 public abstract class Arithmetic implements Instruction {
-	Operand w1;
-	Operand w2;
-	Address dest;
+	protected Operand w1;
+	protected Operand w2;
+	protected Address dest;
 
     /**
      * Constructor for the abstract class Arithmetic which delegates Operands and

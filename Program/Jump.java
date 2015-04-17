@@ -3,7 +3,7 @@ package Program;
 import Simulation.Memory;
 
 public class Jump implements Instruction {
-	int index;
+	private int index;
 
 	/**
 	 * Initiates a Jump instruction with the index of the instruction to be executed next.

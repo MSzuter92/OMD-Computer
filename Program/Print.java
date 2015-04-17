@@ -4,7 +4,7 @@ import Simulation.Memory;
 import Simulation.Operand;
 
 public class Print implements Instruction {
-	Operand w;
+	private Operand w;
 
 	/**
 	 * Initiates a Print instruction which prints the value of the Operand sent in.

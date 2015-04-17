@@ -7,10 +7,9 @@ import Program.Instruction;
 import Program.Program;
 
 public class Computer {
-	Counter counter;
-	Memory memory;
-	Program program;
-	Instruction[] instructions;
+	private Counter counter;
+	private Memory memory;
+	private Instruction[] instructions;
 
 	/**
 	 * Initiates a new Computer. 
