@@ -15,7 +15,7 @@ public class Print implements Instruction {
 	}
 
 	/**
-	 * the exeute method for Print which prints the value of the Word in the Console
+	 * the execute method for Print which prints the value of the Word in the Console
 	 * @param Counter c The counter used by the computer to be decreased
 	 * @param Memory m The memory used by the computer
 	 */

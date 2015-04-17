@@ -11,7 +11,7 @@ public class Copy implements Instruction {
 	/**
 	 * Initiates a Copy instruction which moves the value of a Word into another.
 	 * @param Operand src The Address/Word containing the source value
-	 * @param Address dest The Address for the destinaiton of the result
+	 * @param Address dest The Address for the destination of the result
 	 */
     public Copy(Operand src, Address dest) {
         this.src = src;

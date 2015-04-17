@@ -24,7 +24,7 @@ public class Computer {
 	 * @param Program The program to be loaded
 	 */
 	public void load(Program program) {
-		counter = new Counter(); //Creates new Counter
+		counter = new Counter();
 
 		ArrayList<Instruction> temp = program.fetchInstructions();
 		instructions = new Instruction[temp.size()];
